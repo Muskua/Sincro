@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polizza</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- DROPDOWN MENU CODE START -->
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+<!-- DROPDOWN MENU CODE END -->
+</head>
+<body>
+    <h1>This is the heart of sincro</h1>
+    <h2>other apps to link</h2>
+
+    <label>Partite:</label>
+    <a href="/partite"><button>Agg.</button></a>
+    <ol>
+        <li>Partita 1</li>
+        <li>Partita n</li>
+    </ol>
+
+    <label>Garanzie:</label>
+    <a href="/garanzie"><button>Agg.</button></a>
+    <ol>
+        <li>Garanzia 1</li>
+        <li>Garanzia n</li>
+    </ol>
+
+    <div>
+        <label for="w3mission">Nome prodotto:</label>
+
+        <textarea id="w3mission" rows="1" cols="20">
+        Prodotto
+        </textarea>
+    </div>
+
+    <div>
+        <label for="w3mission">Modello edizione:</label>
+
+        <textarea id="w3mission" rows="1" cols="20">
+        Modello
+        </textarea>
+    </div>
+
+    <label class="switch">Condizione globale
+        <input type="checkbox">
+        <span class="slider round">Attiva</span>
+    </label>
+
+    <h3>Validità amministrativa</h3>
+    <form>
+        <label>Stipula:
+            <input type="date">
+        </label>
+        <label>Scadenza:
+            <input type="date">
+        </label>
+    </form>
+
+    <form>
+        <label>Pagamento:
+            <input type="date">
+        </label>
+    </form>
+
+    <div class="dropdown">
+        <button class="dropbtn">Coassicuratrici Dirette</button>
+        <div class="dropdown-content">
+            <a href="#">Assicuraz. 1</a>
+            <a href="#">Assicuraz. 2</a>
+            <a href="#">Assicuraz. 3</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Coassicuratrici Indirette</button>
+        <div class="dropdown-content">
+            <a href="#">Assicuraz. 1</a>
+            <a href="#">Assicuraz. 2</a>
+            <a href="#">Assicuraz. 3</a>
+        </div>
+    </div>
+
+    <div>
+        <label for="w3mission">Varie Note:</label>
+
+        <textarea id="w3mission" rows="4" cols="50">
+        Testo Note sinistro
+        </textarea>
+    </div>
+    <h2> TODO</h2>
+    <p>Partite/Garanzie feeds from a user created db's</p>
+    <p>Coassicuratrici dir/indir feeds from user created db's</p>
+</body>
+</html>

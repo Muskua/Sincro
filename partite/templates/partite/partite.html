@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Partite</title>
+<style>
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+<!-- DROPDOWN MENU END -->
+</head>
+<body>
+	<h2>Partite</h2>
+    <label>Partite:</label>
+    <a href="/elenco_partite"><button>crea</button></a>
+    <a href="/elenco_partite"><button>elimina</button></a>
+    <ol>
+    	<li>Element 1</li>
+    	<li>Element 2</li>
+    	<li>Element n</li>
+    </ol>
+
+    <h2>Valori partita</h2>
+
+    <label>Cap Ass. Attuale:</label>
+    <input type="number">
+
+    <div>	
+	    <label>Cap. derogato %:</label>
+	    <input type="number">
+	    <input type="number">
+	</div>
+
+	<div>
+	    <label>Preesistenza analitica:</label>
+	    <input type="number">
+    </div>
+
+	<div class="dropdown">
+	  <button class="dropbtn">Dropdown</button>
+	  <div class="dropdown-content">
+	    <a href="#">Analitica</a>
+	    <a href="#">Sufficiente</a>
+	  </div>
+	</div>
+
+	<h3>If Sufficiente:</h3>
+    <div>
+	    <label>Valore ricostruzione a nuovo:</label>
+	    <input type="number">
+    </div>
+
+    <h3>If Analitica</h3>
+    <div>
+	    <label>Scopertura:</label>
+	    <input type="number">
+	    <h3>OPEN NEW APP /analitica/</h3>
+    </div>
+
+    <h3>If PRR:</h3>
+    <div>
+	    <label>Valore rilevato:</label>
+	    <input type="number">
+	    <label>Cap Assicurabile:</label>
+	    <input type="number">
+    </div>
+
+    <h2>Conteggi</h2>
+	<div class="dropdown">
+	  <label>Copertura:</label>
+	  <button class="dropbtn">Dropdown</button>
+	  <div class="dropdown-content">
+	    <a href="#">1</a>
+	    <a href="#">2</a>
+	    <a href="#">3</a>
+	    <a href="#">4</a>
+	    <a href="#">PRA</a>
+	    <a href="#">PRA</a>
+	    <a href="#">PRA</a>
+	    <a href="#">PRR</a>
+	    <a href="#">PRR</a>
+	    <a href="#">PRR</a>
+	  </div>
+	</div>
+
+
+</body>
+</html>
